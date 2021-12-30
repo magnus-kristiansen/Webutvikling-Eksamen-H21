@@ -1,0 +1,128 @@
+@import "../../base/typography";
+@import "../../abstracts/colors";
+
+
+.center-wrapper {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .quiz-container {
+        width: auto;
+        height: auto;
+        text-align: center;
+
+        .question-txt {
+            margin-top: 3rem;
+        }
+    
+        .quiz-btns-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 1rem;
+        }
+
+        .option-btns-container {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+    
+        .text-output-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+    
+            .message-output {
+                display: none;
+                margin-top: 1rem;
+                border-radius: 1rem;
+                padding: 1rem 3rem;
+                width: auto;
+                font-weight: $weight-bold;
+            }
+        }
+
+        .user-name-message-output {
+            display: none;
+            background-color: $sweet-corn;
+            color: $buttered-rum;
+            margin-top: 1rem;
+            border-radius: 1rem;
+            padding: 1rem 3rem;
+            width: auto;
+            font-weight: $weight-bold;
+        }
+
+        .submit-user-name-btn {
+            margin-top: 1rem;
+        }
+    
+        .user-name-input-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .back-to-quiz-page-btn {
+            margin: 2rem 0;
+        }
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+
+    .center-wrapper {
+        height: 100vh;
+
+        .quiz-container {
+            margin: 0 1rem;
+
+            .option-btns-container {
+                flex-direction: column;
+                width: 60%;
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .quiz-container {
+        margin-top: 5rem;
+
+        .quiz-title {
+            font-size: $size-5;
+            margin-top: 5rem;
+        }
+    
+        .question-txt-output {
+            font-size: $size-6;
+        }
+    
+        .quiz-subtitle {
+            font-size: $size-6;
+        }
+    }
+
+    .quiz-results-title {
+        margin-top: 10rem;
+    }
+}
+

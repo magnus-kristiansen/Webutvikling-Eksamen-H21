@@ -1,0 +1,26 @@
+@import "../abstracts/colors";
+
+.drop-down-menu-container, .input-field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-down-menu, .input-field {
+    border-radius: 2rem;
+    border: 1px solid $loblolly;
+    color: $black;
+    background-color: $porcelain;
+    padding: 1rem;
+}
+
+.drop-down-menu {
+    width: 12rem;
+}
+
+.input-field {
+    width: 15rem;
+}
+
+.drop-down-menu:focus, .input-field:focus {
+    outline: 2px solid $azure-radiance;
+}

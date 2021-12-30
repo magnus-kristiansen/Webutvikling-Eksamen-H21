@@ -1,0 +1,74 @@
+@import "../../abstracts/colors";
+@import "../../base/typography";
+
+.fact-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .fact-item {
+        grid-column: auto / span 3;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    
+        &__img {
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        &__content {
+            display: flex;
+            flex-direction: column;
+            margin: 0 1rem 1rem 1rem;
+            height: 100%;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+
+    .fact-grid {
+
+        .fact-item {
+            grid-column: auto / span 4;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    
+    .fact-grid {
+
+        .fact-item {
+            grid-column: auto / span 6;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    
+    .fact-grid {
+        
+        .fact-item {
+            grid-column: auto / span 6;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .fact-grid {
+        gap: 0;
+
+        .fact-item {
+            grid-column: auto / span 12;
+            margin-bottom: 2rem;
+        }
+    }
+}

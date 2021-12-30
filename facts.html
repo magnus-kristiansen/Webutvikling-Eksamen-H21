@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo-and-icon/knowledge-me-icon.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script defer src="scripts/hamburger-menu.js"></script>
+    <script defer src="scripts/components/Logo.js"></script>
+    <script defer src="scripts/animations/facts-animations.js"></script>
+    <script type="module" src="scripts/pages/facts.js"></script>
+    <title>Facts</title>
+</head>
+<body>
+    
+    <!--NAV BAR START-->
+    <div class="nav-bar">
+
+        <a class="nav-logo" href="facts.html">
+            <logo-img src="images/logo-and-icon/knowledge-me-logo.svg" alt="Knowledge me logo"></logo-img>
+        </a>
+
+        <!--Hamburger menu-->
+        <div>
+            <i class="hamburger-menu fas fa-bars"></i>
+        </div>
+
+        <!--Navigation bar-->
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li><a class="nav-list__link" href="facts.html">Facts</a></li>
+                <li><a class="nav-list__link" href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+    </div>
+<!--NAV BAR END-->
+
+
+    <!--MAIN START-->
+    <main>
+        <!--Page wrapper start-->
+        <div class="page-wrapper">
+
+            <h1 class="facts-title">Facts</h1>
+
+            <h5 class="choose-quiz-theme-title"><i class="fas fa-hand-pointer"></i> Choose a quiz theme</h5>
+
+            <div class="theme-btn-container">
+                <button class="btn kanye-btn theme-btn">Kanye West's discography</button>
+                <button class="btn crypto-btn theme-btn">Cryptocurrencies</button>
+            </div>
+            
+            <hr class="theme-filter-divider">
+
+            <!-- KANYE THEME SECTION START -->
+            <section class="kanye-theme-section">
+
+                <h5 class="filter-title"><i class="fas fa-filter"></i> Filter</h5>
+
+                <!--Drop down menu - Filter by length-->
+                <div class="drop-down-menu-container">
+                    <label for="length-drop-down-menu">Filter by length</label>
+                    <select name="length-drop-down-menu" class="length-select-input drop-down-menu" id="length-drop-down-menu">
+                        <option></option>
+                        <option value="Longer than 1 hour">Longer than 1 hour</option>
+                        <option value="Shorter than 1 hour">Shorter than 1 hour</option>
+                    </select>
+                </div>
+
+                <!--Search word input-->
+                <div class="input-field-container">
+                    <label for="kanye-word-input" class="input-field-label">Filter by search word</label>
+                    <input class="kanye-word-input input-field" placeholder="The Life of Pablo..." type="text" id="kanye-word-input">
+                </div>
+
+                <hr class="filter-grid-divider">
+
+                <!--Chosen theme-->
+                <div class="chosen-theme-container">
+                    <p>Quiz theme:</p>
+                    <h4 class="fact-title">Kanye West's Discography</h3>
+                </div>
+
+            </section>
+            <!-- KANYE THEME SECTION END -->
+
+
+            <!-- CRYPTO THEME SECTION START -->
+            <section class="crypto-theme-section">
+
+                <h5 class="filter-title"><i class="fas fa-filter"></i> Filter</h5>
+
+                <!--Drop down menu - Filter by consensus mechanism-->
+                <div class="drop-down-menu-container">
+                    <label for="consenus-mechanism-drop-down-menu">Filter by consensus mechanism</label>
+                    <select name="consenus-mechanism-drop-down-menu" class="consensus-mechanism-select-input drop-down-menu" id="consenus-mechanism-drop-down-menu">
+                        <option></option>
+                        <option value="Proof of Stake">Proof of Stake</option>
+                        <option value="Proof of Work">Proof of Work</option>
+                    </select>
+                </div>
+
+                <!--Search word input-->
+                <div class="input-field-container">
+                    <label for="crypto-word-input" class="input-field-label">Filter by search word</label>
+                    <input class="crypto-word-input input-field" type="text" id="crypto-word-input">
+                </div>
+
+                <hr class="filter-grid-divider">
+
+                <!--Chosen theme-->
+                <div class="chosen-theme-container">
+                    <p>Quiz theme:</p>
+                    <h4 class="fact-title">Cryptocurrencies</h3>
+                </div>
+
+            </section>
+            <!-- CRYPTO THEME SECTION END -->
+
+            <!-- FACT GRID -->
+            <section class="fact-grid"><!--JS--></section>
+
+        </div>
+        <!--Page wrapper end-->
+    </main>
+    <!--MAIN END-->
+
+</body>
+</html>
+
+
+

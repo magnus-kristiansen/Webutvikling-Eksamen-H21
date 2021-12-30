@@ -1,0 +1,27 @@
+@import "../base/typography";
+@import "../abstracts/colors";
+
+.btn {
+    width: auto;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 30px;
+    border: 1px solid $loblolly;
+    background-color: $white;
+    color: $black;
+    font-size: $size-6;
+    font-weight: $weight-semibold;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &--primary {
+        border: none;
+        background-color: $azure-radiance;
+        color: $white;
+        transition: background-color 0.5s;
+    
+        &:hover {
+            background-color: $azure-radiance-dark; 
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@import "../abstracts/colors";
+
+.box {
+    display: block;
+    background-color: $porcelain;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+}
